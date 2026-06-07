@@ -1,0 +1,16 @@
+# Render Blueprint — deploys the PixelStream backend (Node + Puppeteer + Chromium)
+# Create a new "Blueprint" on Render and point it at this repo, or create a
+# Web Service manually with: Runtime = Docker, Dockerfile path = backend/Dockerfile.
+services:
+  - type: web
+    name: pixelstream-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    # Chromium needs memory — the free 512MB tier can OOM under load.
+    # "starter" (or higher) is recommended; "free" works for light demo use.
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: START_URL
+        value: https://duckduckgo.com

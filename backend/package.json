@@ -1,0 +1,16 @@
+{
+  "name": "pixelstream-backend",
+  "version": "1.0.0",
+  "description": "PixelStream backend — headless Chromium control over WebSocket using Puppeteer + CDP screencast",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.15.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "ws": "^8.18.0"
+  }
+}
