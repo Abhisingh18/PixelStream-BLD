@@ -84,8 +84,6 @@ cd frontend && npm install && npm run dev    # UI on :3000
 
 - Deploy. Open the Vercel URL → **Start Browser**.
 
-> 💡 Render's free tier (512 MB) can run out of memory under Chromium. If the
-> browser fails to start, upgrade the instance.
 
 ---
 
