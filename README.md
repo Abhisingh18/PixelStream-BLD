@@ -5,7 +5,6 @@ A mini "TeamViewer for a browser". You open a web UI, hit **Start Browser**, and
 your browser in real time. You can **click, scroll, type, and navigate** — and it
 all happens inside that remote headless browser..
 
-Built for the **BLD SDE Intern assignment**.
 
 ---
 
